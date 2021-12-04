@@ -91,13 +91,13 @@ const contains = (arr, nameInput, cb) => {
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-contains(names, 'Colt', result => {
-  if(result === true){
-    console.log('Colt is in the array')
-  } else {
-    console.log('Colt is not in the array')
-  }
-})
+// contains(names, 'Colt', result => {
+//   if(result === true){
+//     console.log('Colt is in the array')
+//   } else {
+//     console.log('Colt is not in the array')
+//   }
+// })
 
 
 
@@ -110,6 +110,16 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
+const uniq = (arr, cb) => {
+  let uniqArr = []
+  for (i=0;i<arr.length;i++){
+    if (uniqArr.includes(arr[i]) !== true){
+      uniqArr.push(arr[i])
+    }
+  }
+  cb(uniqArr)
+}
+
 
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
@@ -119,7 +129,7 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
-
+uniq(names, cb => console.log(`The new names array with all the duplicate items removed is [${cb}].`))
 
 
 ////////// PROBLEM 6 //////////
@@ -130,6 +140,8 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE 
+const each = (arr, cb) => arr.forEach((elem, i) => cb(elem, i))
+
 
 
 /*
@@ -140,7 +152,7 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
-
+each(names, (indexPamram, itemParam) => console.log(`The item at index ${indexPamram} is ${itemParam}.`))
 
 ////////// PROBLEM 7 //////////
 
