@@ -58,7 +58,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 
 // CODE HERE
 const totalPopulation = populations.reduce((previousPop, currentPop) => previousPop + currentPop)
-console.log(totalPopulation)
+// console.log(totalPopulation)
 
 
 ////////// PROBLEM 4 //////////
@@ -82,7 +82,8 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-// const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const myStrongest = monstersInYourPocket.filter(monster => monster["CP"] > 200)
+// console.log(myStrongest)
 
 
 
