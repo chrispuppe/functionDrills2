@@ -123,4 +123,4 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 
 // CODE HERE
 const bobsTotal = purchases.filter(purchase => purchase["owner"] === "Bob").map(purchase => purchase["price"]).reduce((prevPurch, currPurch) => prevPurch + currPurch)
-console.log(bobsTotal)
+// console.log(bobsTotal)
