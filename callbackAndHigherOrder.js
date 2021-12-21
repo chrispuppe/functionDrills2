@@ -56,7 +56,7 @@ const first = (arr, cb) => cb(arr[0])
 */
 
 // CODE HERE
-const last = (arr, cb) => cb(arr[(arr.length-1)])
+const last = (arr, cb) => cb(arr[arr.length-1])
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
@@ -112,7 +112,7 @@ const contains = (arr, nameInput, cb) => {
 // CODE HERE
 const uniq = (arr, cb) => {
   let uniqArr = []
-  for (i=0;i<arr.length;i++){
+  for (let i=0;i<arr.length;i++){
     if (uniqArr.includes(arr[i]) !== true){
       uniqArr.push(arr[i])
     }
@@ -219,7 +219,7 @@ getUserById(users, '16t', user => {
 */
 
 // CODE HERE
-const addingFactory = cb => func2 => cb +func2
+const addingFactory = num1 => num2 => num1 + num2
 
 
 /*
