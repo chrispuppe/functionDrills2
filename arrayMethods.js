@@ -82,7 +82,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-const myStrongest = monstersInYourPocket.filter(monster => monster["CP"] > 200)
+const myStrongest = monstersInYourPocket.filter(monster => monster.CP > 200)
 // console.log(myStrongest)
 
 
@@ -101,7 +101,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 // CODE HERE
-const orderTotals = orders.map(order => order["price"] * (1 + order["tax"]))
+const orderTotals = orders.map(order => order.price * (1 + order.tax))
 // console.log(orderTotals)
 
 
@@ -122,5 +122,5 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
 // CODE HERE
-const bobsTotal = purchases.filter(purchase => purchase["owner"] === "Bob").map(purchase => purchase["price"]).reduce((prevPurch, currPurch) => prevPurch + currPurch)
+const bobsTotal = purchases.filter(purchase => purchase.owner === "Bob").map(purchase => purchase.price).reduce((prevPurch, currPurch) => prevPurch + currPurch)
 // console.log(bobsTotal)
